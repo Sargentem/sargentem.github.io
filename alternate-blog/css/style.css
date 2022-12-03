@@ -1,0 +1,165 @@
+/* TO GET AN IDEA OF THE CSS YOU WILL LIKELY BE USING, SEE THE LISTS BELOW. */
+
+        /* 
+        
+        Spacing 
+
+            - padding (shorthand and/or specific properties like padding-bottom, etc.)
+
+            - margin, (shorthand and/or specific properties like margin-top, etc.)
+
+            - letter-spacing, word-spacing, line-height
+
+            - width, max-width, min-width
+            - height, max-height, min-height
+
+        Typography 
+
+            - font-family, font-size, font-style, font-weight
+
+            - text-decoration, text-align
+
+            - color
+
+            - text-shadow, text-transform
+
+        Box, Layout and Border 
+
+            - border (shorthand and/or specific properties like border-top, border-bottom-radius, border-width, etc.)
+
+            - box-shadow
+
+            - display, float, align-items, align-content
+
+            - grid-template-columns, grid-column-gap
+
+            - transform
+
+        Other
+
+            - :nth()-child (to target specific child elements)
+
+            - :focus, :hover, :active (to target link states)
+
+            - @font-face or @import (to import typefaces)
+
+        */
+
+
+/* ------ START WRITING YOUR CODE BELOW ------ */
+
+
+@font-face {
+    font-family:Lato;
+    src: url(../fonts/lato-regular.ttf);
+    font-style:normal;
+    font-weight:normal;
+}
+@font-face {
+
+    font-family:Poppins;
+    src: url(../fonts/poppins-regular.ttf);
+    font-style:normal;
+    font-weight:normal;
+}
+
+
+/* Root */
+
+html {
+    font-size:16px;
+}
+
+
+/* Body & Main  */
+
+body {
+    font-family:Lato, Arial, sans-serif;
+    font-size:1rem;
+    padding:1rem;
+    min-width:39rem;
+    max-width:50rem;
+    margin:0 auto;
+}
+main {
+    background-color:rgb(255, 255, 255);
+    background-size:cover;
+    background-repeat: no-repeat;
+    border:1px solid #333;
+
+    /*starting code*/
+
+    h1 {
+        text-transform: uppercase;
+        font-size:12rem;
+        margin: 0;
+        letter-spacing: .5rem;
+        color:rgb(139, 0, 83);
+        text-shadow:.09375rem .09375rem .09375rem #000;
+        font-family:'Lato', Garamond, serif;
+        text-align:center;
+    }
+    
+    h2 {
+        text-transform: uppercase;
+        color:rgb(139, 0, 83);
+        text-shadow:.09375rem .09375rem .09375rem #000;
+        font-family:'Lato', Garamond, serif;
+        font-size: 8rem;
+        letter-spacing: 0.25rem;
+        text-align:center;
+        font-weight:normal;
+    }
+    
+    h3 {
+        text-transform: uppercase;
+        color:rgb(139, 0, 83);
+        text-shadow:.09375rem .09375rem .09375rem #000;
+        font-family:'Lato', Garamond, serif;
+        font-size: 2rem;
+        font-weight: normal;
+        text-align:center;
+    }
+    
+    
+    /* Section & Paragraph */
+    
+    section {
+        margin-top: 0.5rem;
+    }
+    
+    p {
+        margin: 1rem auto;
+        padding: 0 1rem;
+        width:90%;
+        text-align: left;
+    }
+    
+    /* Image & Figure */
+    
+    img {
+        width: 100%;
+        margin: 0 auto;
+        max-width: 50rem;
+    }
+    
+    figure {
+        margin-bottom: 2rem;
+    }
+    
+    figcaption {
+        padding-top: 0.5rem;
+        text-align: right;
+    }
+    
+    h4>span {
+        padding: 0 0.5rem;
+    }
+    
+    /* Footer */
+    
+    footer {
+        padding: 1rem;
+        border-top: 2rem solid #333;
+    }
+    
